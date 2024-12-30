@@ -1,2 +1,2 @@
 # ashlive
-Archiso profile
+Custom archiso profile to create AshOS installation ISO.
