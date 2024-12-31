@@ -11,6 +11,8 @@ bolt
 brltty
 broadcom-wl
 btrfs-progs
+chaotic-keyring
+chaotic-mirrorlist
 clonezilla
 cloud-init
 cryptsetup
