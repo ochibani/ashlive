@@ -1,0 +1,3 @@
+[submodule "airootfs/root/ash-installer"]
+	path = airootfs/root/ash-installer
+	url = https://github.com/ochibani/ash-installer.git
