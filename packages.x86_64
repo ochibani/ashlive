@@ -20,6 +20,7 @@ cryptsetup
 curl
 darkhttpd
 ddrescue
+debugedit
 dhclient
 dhcpcd
 diffutils
@@ -34,6 +35,7 @@ espeakup
 ethtool
 exfatprogs
 f2fs-tools
+fakeroot
 fatresize
 foot-terminfo
 fsarchiver
