@@ -100,7 +100,7 @@ python
 qemu-guest-agent
 refind
 reflector
-rc-local
+#rc-local
 rp-pppoe
 rsync
 rxvt-unicode-terminfo
