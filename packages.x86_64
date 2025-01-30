@@ -2,7 +2,7 @@ alsa-utils
 amd-ucode
 arch-install-scripts
 archinstall
-ash-git
+#ash-git
 b43-fwcutter
 base
 bcachefs-tools
@@ -15,7 +15,9 @@ chaotic-keyring
 chaotic-mirrorlist
 clonezilla
 cloud-init
+coreutils
 cryptsetup
+curl
 darkhttpd
 ddrescue
 dhclient
@@ -94,14 +96,17 @@ pcsclite
 ppp
 pptpclient
 pv
+python
 qemu-guest-agent
 refind
 reflector
+rc-local
 rp-pppoe
 rsync
 rxvt-unicode-terminfo
 screen
 sdparm
+sed
 sequoia-sq
 sg3_utils
 smartmontools
