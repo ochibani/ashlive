@@ -72,6 +72,7 @@ def main():
     #   5. Services (init, network, etc.)
     #os.system("/usr/lib/systemd/system-generators/systemd-fstab-generator /run/systemd/generator '' ''") # REVIEW recommended as fstab changed. "systemctl daemon-reload"
     os.system("systemctl daemon-reload")
+    os.system("systemctl enable rc-local")
     os.system("systemctl enable NetworkManager")
 
     #   6. Boot and EFI
