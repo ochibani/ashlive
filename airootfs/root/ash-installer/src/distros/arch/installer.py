@@ -10,7 +10,7 @@ from setup import args, distro
 is_format_btrfs = True # REVIEW temporary
 KERNEL = "" # options: https://wiki.archlinux.org/title/kernel e.g. "-xanmod"
 packages = f"base linux{KERNEL} btrfs-progs sudo grub dhcpcd networkmanager nano \
-linux-firmware python3 python-anytree paru vim fakeroot debugedit" # os-prober bash tmux arch-install-scripts
+linux-firmware python3 python-anytree paru vim fakeroot debugedit reflector" # os-prober bash tmux arch-install-scripts
 #if not is_ash_bundle:
 #    packages +=  " python3 python-anytree"
 if is_efi:
