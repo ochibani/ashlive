@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="ashlinux"
+iso_name="ashos"
 iso_label="ASH_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Ash Linux <https://github.com/ashos/ashos>"
-iso_application="Ash Linux Live/Rescue DVD"
+iso_publisher="AshOS <https://github.com/ashos/ashos>"
+iso_application="AshOS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="ash"
 buildmodes=('iso')
