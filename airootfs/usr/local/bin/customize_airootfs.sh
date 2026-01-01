@@ -14,7 +14,3 @@ echo "%wheel ALL=(ALL) ALL" | sudo tee /etc/sudoers.d/wheel
 sudo chmod 440 /etc/sudoers.d/wheel
 echo "liveuser ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/liveuser
 sudo chmod 440 /etc/sudoers.d/liveuser
-
-# Enable display manager & network manager
-systemctl enable --now sddm
-systemctl enable --now NetworkManager
