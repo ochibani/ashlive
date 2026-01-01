@@ -57,16 +57,19 @@ iw
 iwd
 jfsutils
 kate
+kcoreaddons
 kdeplasma-addons
 kde-gtk-config
 kitty-terminfo
 konsole
+kpmcore
 kscreen
 ldns
 less
 lftp
 libfido2
 libusb-compat
+libpwquality
 linux
 linux-atm
 linux-firmware
@@ -115,6 +118,9 @@ pptpclient
 pv
 python
 qemu-guest-agent
+qt6-declarative
+qt6-svg
+rate-mirrors
 refind
 reflector
 #rc-local
@@ -154,4 +160,5 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
+yaml-cpp
 zsh
