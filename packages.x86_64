@@ -4,7 +4,6 @@ arch-install-scripts
 archinstall
 ark
 #ash-git
-ashos-calamares-git
 b43-fwcutter
 base
 bcachefs-tools
