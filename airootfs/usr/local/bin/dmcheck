@@ -1,0 +1,64 @@
+#!/bin/bash
+set -e
+###############################################################################
+# Author    :   Erik Dubois
+# Website   :   https://www.erikdubois.be
+# Website   :   https://www.arcolinux.info
+# Website   :   https://www.arcolinux.com
+# Website   :   https://www.arcolinuxd.com
+# Website   :   https://www.arcolinuxb.com
+# Website   :   https://www.arcolinuxiso.com
+# Website   :   https://www.arcolinuxforum.com
+###############################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+###############################################################################
+
+package=ly
+if pacman -Qs $package > /dev/null ; then
+  ln -sf /usr/lib/systemd/system/ly.service /etc/systemd/system/display-manager.service
+fi
+package=sddm
+if pacman -Qs $package > /dev/null ; then
+  # Create the directory if it doesn't exist
+  mkdir -p /etc/sddm.conf.d
+
+  # Write default KDE settings to kde_settings.conf
+  tee /etc/sddm.conf.d/kde_settings.conf > /dev/null << 'EOF'
+[Autologin]
+Relogin=false
+Session=plasma
+User=
+
+[General]
+HaltCommand=/usr/bin/systemctl poweroff
+RebootCommand=/usr/bin/systemctl reboot
+
+[Theme]
+Current=breeze
+
+[Users]
+HideUsers=aur
+MaximumUid=60513
+MinimumUid=1000
+EOF
+
+  # Set proper ownership and permissions
+  chown root:root /etc/sddm.conf.d/kde_settings.conf
+  chmod 644 /etc/sddm.conf.d/kde_settings.conf
+
+  ln -sf /usr/lib/systemd/system/sddm.service /etc/systemd/system/display-manager.service
+fi
+package=gdm
+if pacman -Qs $package > /dev/null ; then
+  ln -sf /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service
+fi
+package=lxdm
+if pacman -Qs $package > /dev/null ; then
+  ln -sf /usr/lib/systemd/system/lxdm.service /etc/systemd/system/display-manager.service
+fi
+package=lightdm
+if pacman -Qs $package > /dev/null ; then
+  ln -sf /usr/lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service
+fi
