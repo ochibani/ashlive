@@ -22,6 +22,7 @@ cryptsetup
 curl
 darkhttpd
 ddrescue
+debugedit
 dhclient
 dhcpcd
 diffutils
@@ -37,6 +38,7 @@ efibootmgr
 espeakup
 ethtool
 exfatprogs
+fakeroot
 f2fs-tools
 fatresize
 firefox
