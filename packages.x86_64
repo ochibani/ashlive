@@ -46,6 +46,7 @@ flatpak
 foot-terminfo
 fsarchiver
 gpart
+gparted
 gpm
 gptfdisk
 grml-zsh-config
@@ -162,6 +163,8 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
+xdg-user-dirs-gtk
+xdg-utils
 xfsprogs
 xl2tpd
 yaml-cpp
